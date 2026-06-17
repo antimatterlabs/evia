@@ -56,7 +56,7 @@ include 'partials/header.php';
                 back up tomorrow.</li>
         </ul>
 
-        <div class="img-placeholder">Lifestyle photo — morning routine</div>
+        <img src="assets/images/evia-girl-kitchen.png" alt="Morning routine" style="width:100%; border-radius:12px; margin:32px 0;">
 
         <h2>The calmer kind of busy</h2>
         <p>You're not going to out-schedule a demanding life. But you can give it one small, reliable moment that's
@@ -72,7 +72,7 @@ include 'partials/header.php';
 </div>
 
 <!-- Related posts -->
-<section class="section section-cream" style="margin-top:60px;">
+<section class="section article-related flat-journal">
     <div class="container">
         <div class="section-head">
             <h2>Keep reading</h2>

@@ -11,7 +11,7 @@ $footerUnderline = <<<'SVG'
 SVG;
 ?>
 
-    <?php if (!$hideNewsletter): ?>
+<?php if (!$hideNewsletter): ?>
     <!-- Email Collection Newsletter Section -->
     <section class="newsletter-section">
         <div class="container">
@@ -27,103 +27,103 @@ SVG;
             </div>
         </div>
     </section>
-    <?php endif; ?>
+<?php endif; ?>
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <img src="assets/images/smiley-slogan.svg" alt="Evia Smiley" class="footer-smiley">
-            <div class="footer-top-grid">
-                <div class="footer-brand-col">
-                    <img src="assets/images/evia-logo.svg" alt="Evia Logo" class="footer-logo">
-                    <p class="footer-about">Here for the mornings that already ask a lot. Simple, effective, daily
-                        nutrition.</p>
-                    <div class="footer-socials">
-                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h4>Shop</h4>
-                    <?= $footerUnderline ?>
-                    <ul>
-                        <li><a href="product.php">Daily Fibre</a></li>
-                        <li><a href="shop.php#protein">Daily Protein</a></li>
-                        <li><a href="shop.php">Starter Packs</a></li>
-                        <li><a href="shop.php#subscribe">Subscriptions</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h4>Learn</h4>
-                    <?= $footerUnderline ?>
-                    <ul>
-                        <li><a href="about.php">Our Story</a></li>
-                        <li><a href="science.php">The Science</a></li>
-                        <li><a href="benefits.php#ingredients">The Ingredients</a></li>
-                        <li><a href="learn.php">Journal</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h4>Help</h4>
-                    <?= $footerUnderline ?>
-                    <ul>
-                        <li><a href="faq.php">FAQs</a></li>
-                        <li><a href="faq.php#shipping">Shipping &amp; Returns</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
-                        <li><a href="#">Account</a></li>
-                    </ul>
+<!-- Main Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <img src="assets/images/smiley-slogan.svg" alt="Evia Smiley" class="footer-smiley">
+        <div class="footer-top-grid">
+            <div class="footer-brand-col">
+                <img src="assets/images/evia-logo.svg" alt="Evia Logo" class="footer-logo">
+                <p class="footer-about">Here for the mornings that already ask a lot. Simple, effective, daily
+                    nutrition.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <div class="footer-copyright">&copy; <?= date('Y') ?> Evia. All rights reserved.</div>
-                <div class="footer-policies">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Accessibility</a>
-                </div>
+            <div class="footer-nav-col">
+                <h4>Shop</h4>
+                <?= $footerUnderline ?>
+                <ul>
+                    <li><a href="product.php">Daily Fibre</a></li>
+                    <li><a href="shop.php#protein">Daily Protein</a></li>
+                    <li><a href="shop.php">Starter Packs</a></li>
+                    <li><a href="shop.php#subscribe">Subscriptions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav-col">
+                <h4>Learn</h4>
+                <?= $footerUnderline ?>
+                <ul>
+                    <li><a href="about.php">Our Story</a></li>
+                    <li><a href="science.php">The Science</a></li>
+                    <li><a href="benefits.php#ingredients">The Ingredients</a></li>
+                    <li><a href="learn.php">Learn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav-col">
+                <h4>Help</h4>
+                <?= $footerUnderline ?>
+                <ul>
+                    <li><a href="faq.php">FAQs</a></li>
+                    <li><a href="faq.php#shipping">Shipping &amp; Returns</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
 
-    <script>
-        // Mobile nav toggle
-        (function () {
-            var toggle = document.getElementById('navToggle');
-            var nav = document.getElementById('mobileNav');
-            if (toggle && nav) {
-                toggle.addEventListener('click', function () {
-                    var open = document.body.classList.toggle('nav-open');
-                    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-                    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-                });
-                nav.addEventListener('click', function (e) {
-                    if (e.target.tagName === 'A') {
-                        document.body.classList.remove('nav-open');
-                        toggle.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            }
-        })();
+        <div class="footer-bottom">
+            <div class="footer-copyright">&copy; <?= date('Y') ?> Evia. All rights reserved.</div>
+            <div class="footer-policies">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
-        // FAQ accordion (no-op on pages without .faq-item)
-        (function () {
-            var items = document.querySelectorAll('.faq-item');
-            items.forEach(function (item) {
-                var q = item.querySelector('.faq-q');
-                if (!q) return;
-                q.addEventListener('click', function () {
-                    item.classList.toggle('open');
-                    var exp = item.classList.contains('open');
-                    q.setAttribute('aria-expanded', exp ? 'true' : 'false');
-                });
+<script>
+    // Mobile nav toggle
+    (function () {
+        var toggle = document.getElementById('navToggle');
+        var nav = document.getElementById('mobileNav');
+        if (toggle && nav) {
+            toggle.addEventListener('click', function () {
+                var open = document.body.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
             });
-        })();
-    </script>
+            nav.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') {
+                    document.body.classList.remove('nav-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    })();
+
+    // FAQ accordion (no-op on pages without .faq-item)
+    (function () {
+        var items = document.querySelectorAll('.faq-item');
+        items.forEach(function (item) {
+            var q = item.querySelector('.faq-q');
+            if (!q) return;
+            q.addEventListener('click', function () {
+                item.classList.toggle('open');
+                var exp = item.classList.contains('open');
+                q.setAttribute('aria-expanded', exp ? 'true' : 'false');
+            });
+        });
+    })();
+</script>
 </body>
 
 </html>

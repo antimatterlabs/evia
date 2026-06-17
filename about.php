@@ -85,7 +85,8 @@ include 'partials/header.php';
                     the rest of it feel a little easier.</p>
             </div>
             <div class="media-split-media">
-                <img src="assets/images/evia-morning.png" alt="Why Evia Started" style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover;">
+                <img src="assets/images/evia-morning.png" alt="Why Evia Started"
+                    style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
     </div>
@@ -184,7 +185,8 @@ include 'partials/header.php';
                 <a href="benefits.php#ingredients" class="btn btn-purple">Meet the ingredients</a>
             </div>
             <div class="media-split-media">
-                <img src="assets/images/handheld-evia-2.png" alt="Sourcing Evia" style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover;">
+                <img src="assets/images/hero-image-3.png" alt="Sourcing Evia"
+                    style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
     </div>

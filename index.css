@@ -2742,6 +2742,42 @@ body.nav-open .nav-toggle span:nth-child(3) {
   aspect-ratio: 16 / 9;
 }
 
+.article-related {
+  margin-top: 60px;
+  background: var(--purple);
+  color: #ffffff;
+}
+
+.article-related .section-head h2 {
+  color: var(--pink);
+}
+
+.article-related .post-card {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  transition: none;
+}
+
+.article-related .post-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.article-related .post-media {}
+
+.article-related .post-body {
+  padding: 0;
+}
+
+.article-related .post-cat,
+.article-related .post-body h3,
+.article-related .post-body p,
+.article-related .post-meta {
+  color: #ffffff;
+}
+
 /* ---- Contact page ---- */
 .contact-grid {
   display: grid;
@@ -2820,9 +2856,20 @@ textarea.field {
   transition: var(--transition-smooth);
 }
 
-.contact-info-card.card-purple { background: var(--purple); color: #ffffff; }
-.contact-info-card.card-blue { background: var(--blue); color: #ffffff; }
-.contact-info-card.card-pink { background: var(--pink); color: #ffffff; }
+.contact-info-card.card-purple {
+  background: var(--purple);
+  color: #ffffff;
+}
+
+.contact-info-card.card-blue {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+.contact-info-card.card-pink {
+  background: var(--pink);
+  color: #ffffff;
+}
 
 .contact-info-card .ci-icon {
   width: auto;
@@ -3070,9 +3117,14 @@ textarea.field {
 /* ---- Product detail ---- */
 .product-detail {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 60px;
   align-items: start;
+}
+
+.product-gallery,
+.product-info {
+  min-width: 0;
 }
 
 .product-gallery .main-img {
@@ -3085,7 +3137,8 @@ textarea.field {
 }
 
 .product-gallery .main-img img {
-  max-height: 420px;
+  max-height: 100%;
+  max-width: 100%;
   width: auto;
   filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.12));
 }
@@ -3094,11 +3147,14 @@ textarea.field {
   display: flex;
   gap: 14px;
   margin-top: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
 }
 
 .product-thumb {
   width: 84px;
   height: 84px;
+  flex: 0 0 84px;
   border-radius: 10px;
   background: #f1ecf3;
   display: flex;
@@ -3110,8 +3166,9 @@ textarea.field {
 }
 
 .product-thumb img {
-  max-height: 70px;
-  width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .product-thumb.active {
@@ -3288,6 +3345,40 @@ textarea.field {
 
 .product-specs {
   margin-top: 28px;
+}
+
+.product-specs .faq-item,
+.product-specs .faq-item.open {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.product-specs .faq-q {
+  padding: 18px 0;
+}
+
+.product-specs .faq-a {
+  padding: 0;
+}
+
+.product-specs .faq-item.open .faq-a {
+  padding: 0 0 18px;
+}
+
+.product-why-different {
+  margin-top: 40px;
+  overflow: visible;
+}
+
+@media (max-width: 992px) {
+  .product-why-different .why-right-img {
+    bottom: auto;
+    height: auto;
+    max-height: 380px;
+  }
 }
 
 /* ==========================================================================
@@ -3885,18 +3976,19 @@ textarea.field {
 }
 
 @media (max-width: 992px) {
+
   .perks-bg-image,
   .routine-bg-image,
   .quality-bg-image {
-     position: relative;
-     width: 100%;
-     height: 380px;
-     clip-path: none;
-     object-fit: cover;
-     border-radius: 12px;
-     margin-top: 32px;
-     display: block;
-     z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 380px;
+    clip-path: none;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 32px;
+    display: block;
+    z-index: 2;
   }
 }
 
@@ -3926,10 +4018,21 @@ textarea.field {
   justify-content: flex-start;
 }
 
-.flat-benefits .benefit-icon.icon-yellow svg { color: var(--yellow); }
-.flat-benefits .benefit-icon.icon-blue svg { color: var(--blue); }
-.flat-benefits .benefit-icon.icon-pink svg { color: var(--pink); }
-.flat-benefits .benefit-icon:not(.icon-yellow):not(.icon-blue):not(.icon-pink) svg { color: var(--purple); }
+.flat-benefits .benefit-icon.icon-yellow svg {
+  color: var(--yellow);
+}
+
+.flat-benefits .benefit-icon.icon-blue svg {
+  color: var(--blue);
+}
+
+.flat-benefits .benefit-icon.icon-pink svg {
+  color: var(--pink);
+}
+
+.flat-benefits .benefit-icon:not(.icon-yellow):not(.icon-blue):not(.icon-pink) svg {
+  color: var(--purple);
+}
 
 .flat-vitamins .vitamin-card {
   background: transparent;
