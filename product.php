@@ -244,7 +244,7 @@ include 'partials/header.php';
                             fill="currentColor" />
                     </svg>
                     <div class="why-content">
-                        <h4>10 Seconds.</h4>
+                        <h4>10 Second Routine</h4>
                         <p>No prep, no cleanup.<br>Tear, drink, go.</p>
                     </div>
                 </div>
