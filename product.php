@@ -17,11 +17,13 @@ include 'partials/header.php';
         <!-- Gallery -->
         <div class="product-gallery">
             <div class="main-img">
-                <img id="mainImage" src="assets/images/evia_fiber_box.png" alt="Evia Daily Fibre box">
+                <img id="mainImage" src="assets/images/pouch-box.png" alt="Daily Fibre 28-day routine">
             </div>
             <div class="product-thumbs">
-                <div class="product-thumb active" data-img="assets/images/evia_fiber_box.png"><img src="assets/images/evia_fiber_box.png" alt="Daily Fibre box"></div>
-                <div class="product-thumb" data-img="assets/images/evia_fiber_pouch.png"><img src="assets/images/evia_fiber_pouch.png" alt="Daily Fibre sachet"></div>
+                <div class="product-thumb" data-img="assets/images/evia_fiber_pouch.png" data-alt="Daily Fibre 14-day routine"><img src="assets/images/evia_fiber_pouch.png" alt="Daily Fibre 14-day routine"></div>
+                <div class="product-thumb active" data-img="assets/images/pouch-box.png" data-alt="Daily Fibre 28-day routine"><img src="assets/images/pouch-box.png" alt="Daily Fibre 28-day routine"></div>
+                <div class="product-thumb" data-img="assets/images/evia-multibox.png" data-alt="Daily Fibre 56-day routine"><img src="assets/images/evia-multibox.png" alt="Daily Fibre 56-day routine"></div>
+                <div class="product-thumb" data-img="assets/images/evia_fiber_box.png" data-alt="Daily Fibre box"><img src="assets/images/evia_fiber_box.png" alt="Daily Fibre box"></div>
                 <div class="product-thumb" data-img="assets/images/evia-hand-alt.png"><img src="assets/images/evia-hand-alt.png" alt="Evia pouch in hand"></div>
                 <div class="product-thumb" data-img="assets/images/bedside.png"><img src="assets/images/bedside.png" alt="Evia on a bedside table"></div>
                 <div class="product-thumb" data-img="assets/images/evia-lemon-kitchen.png"><img src="assets/images/evia-lemon-kitchen.png" alt="Evia in a kitchen with lemons"></div>
@@ -43,7 +45,7 @@ include 'partials/header.php';
 
             <!-- Purchase options -->
             <div class="purchase-options routine-purchase-options">
-                <div class="purchase-option routine-purchase-option" data-price="$19" data-old="">
+                <div class="purchase-option routine-purchase-option" data-pack="14" data-price="$19" data-old="" data-image="assets/images/evia_fiber_pouch.png" data-image-alt="Daily Fibre 14-day routine">
                     <span class="opt-radio"></span>
                     <span class="routine-plan-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -62,7 +64,7 @@ include 'partials/header.php';
                     </span>
                 </div>
 
-                <div class="purchase-option routine-purchase-option selected" data-price="$33" data-old="$39">
+                <div class="purchase-option routine-purchase-option selected" data-pack="28" data-price="$33" data-old="$39" data-image="assets/images/pouch-box.png" data-image-alt="Daily Fibre 28-day routine">
                     <span class="opt-radio"></span>
                     <span class="routine-plan-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -82,7 +84,7 @@ include 'partials/header.php';
                     <span class="opt-save">SAVE 15%</span>
                 </div>
 
-                <div class="purchase-option routine-purchase-option" data-price="$62" data-old="$78">
+                <div class="purchase-option routine-purchase-option" data-pack="56" data-price="$62" data-old="$78" data-image="assets/images/evia-multibox.png" data-image-alt="Daily Fibre 56-day routine">
                     <span class="opt-radio"></span>
                     <span class="routine-plan-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -190,6 +192,44 @@ include 'partials/header.php';
     </div>
 </section>
 
+<!-- Testimonials -->
+<section class="section product-testimonial-band">
+    <div class="container">
+        <div class="product-testimonial-panel">
+            <div class="product-testimonial-head">
+                <div class="badge-tag">TESTIMONIALS</div>
+                <h2>Real people, real results</h2>
+            </div>
+
+            <div class="product-testimonial-grid">
+                <figure class="product-testimonial">
+                    <blockquote>"Finally, a fiber supplement I actually enjoy taking. It's become my non-negotiable morning ritual."</blockquote>
+                    <figcaption>
+                        <span class="testimonial-avatar">S</span>
+                        <span class="testimonial-meta"><strong>Sarah M.</strong><span class="testimonial-role">Busy professional</span></span>
+                    </figcaption>
+                </figure>
+
+                <figure class="product-testimonial">
+                    <blockquote>"I've tried powders, pills, everything. This is the only thing that's stuck because it's so effortless."</blockquote>
+                    <figcaption>
+                        <span class="testimonial-avatar">J</span>
+                        <span class="testimonial-meta"><strong>James T.</strong><span class="testimonial-role">Fitness enthusiast</span></span>
+                    </figcaption>
+                </figure>
+
+                <figure class="product-testimonial">
+                    <blockquote>"My gut health has never been better. The convenience factor makes all the difference."</blockquote>
+                    <figcaption>
+                        <span class="testimonial-avatar">E</span>
+                        <span class="testimonial-meta"><strong>Emily R.</strong><span class="testimonial-role">Working mom</span></span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Why Daily Fibre Feels Different -->
 <section class="why-different product-why-different">
     <div class="container why-inner-container">
@@ -264,27 +304,87 @@ include 'partials/header.php';
 
 <script>
     (function () {
-        // Gallery thumbnails
         var main = document.getElementById('mainImage');
-        document.querySelectorAll('.product-thumb').forEach(function (t) {
+        var price = document.getElementById('priceDisplay');
+        var thumbs = document.querySelectorAll('.product-thumb');
+        var options = document.querySelectorAll('.purchase-option');
+
+        function setMainImage(src, alt) {
+            if (!src) {
+                return;
+            }
+
+            main.src = src;
+            if (alt) {
+                main.alt = alt;
+            }
+
+            thumbs.forEach(function (thumb) {
+                thumb.classList.toggle('active', thumb.getAttribute('data-img') === src);
+            });
+        }
+
+        function selectOption(opt, updateUrl) {
+            if (!opt) {
+                return;
+            }
+
+            options.forEach(function (x) { x.classList.remove('selected'); });
+            opt.classList.add('selected');
+
+            var p = opt.getAttribute('data-price');
+            var old = opt.getAttribute('data-old');
+            price.innerHTML = p + (old ? ' <span class="old">' + old + '</span>' : '');
+
+            setMainImage(opt.getAttribute('data-image'), opt.getAttribute('data-image-alt'));
+
+            if (updateUrl && window.history && window.history.replaceState) {
+                var url = new URL(window.location.href);
+                url.searchParams.set('pack', opt.getAttribute('data-pack'));
+                window.history.replaceState({}, '', url);
+            }
+        }
+
+        thumbs.forEach(function (t) {
             t.addEventListener('click', function () {
-                document.querySelectorAll('.product-thumb').forEach(function (x) { x.classList.remove('active'); });
-                t.classList.add('active');
-                main.src = t.getAttribute('data-img');
+                setMainImage(t.getAttribute('data-img'), t.getAttribute('data-alt') || t.querySelector('img').alt);
             });
         });
 
-        // Purchase options
-        var price = document.getElementById('priceDisplay');
-        document.querySelectorAll('.purchase-option').forEach(function (opt) {
+        options.forEach(function (opt) {
             opt.addEventListener('click', function () {
-                document.querySelectorAll('.purchase-option').forEach(function (x) { x.classList.remove('selected'); });
-                opt.classList.add('selected');
-                var p = opt.getAttribute('data-price');
-                var old = opt.getAttribute('data-old');
-                price.innerHTML = p + (old ? ' <span class="old">' + old + '</span>' : '');
+                selectOption(opt, true);
             });
         });
+
+        function optionForPack(pack) {
+            var match = null;
+            options.forEach(function (opt) {
+                if (opt.getAttribute('data-pack') === pack) {
+                    match = opt;
+                }
+            });
+            return match;
+        }
+
+        var params = new URLSearchParams(window.location.search);
+        var requestedPack = (params.get('pack') || params.get('package') || '').toLowerCase();
+        var packAliases = {
+            'first': '14',
+            'first-step': '14',
+            'starter': '28',
+            'daily': '28',
+            'daily-rhythm': '28',
+            'household': '56',
+            'household-rhythm': '56'
+        };
+        requestedPack = packAliases[requestedPack] || requestedPack.replace('-day', '');
+
+        var initialOption = requestedPack
+            ? optionForPack(requestedPack)
+            : document.querySelector('.purchase-option.selected');
+
+        selectOption(initialOption || document.querySelector('.purchase-option.selected'), false);
 
         // Quantity
         var input = document.getElementById('qtyInput');

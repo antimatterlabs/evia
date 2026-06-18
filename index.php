@@ -139,7 +139,7 @@ include 'partials/header.php';
                     </li>
                 </ul>
                 <div>
-                    <a href="product.php" class="btn btn-purple">Start with Daily Fibre</a>
+                    <a href="product.php?pack=28" class="btn btn-purple">Start with Daily Fibre</a>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@ include 'partials/header.php';
             <div class="badge-tag">PICK YOUR PACE</div>
             <h3>Choose your rhythm</h3>
             <div class="routine-plan-list">
-                <a href="product.php" class="routine-plan-card">
+                <a href="product.php?pack=14" class="routine-plan-card">
                     <span class="routine-plan-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -168,7 +168,7 @@ include 'partials/header.php';
                     <span class="routine-plan-arrow">&rarr;</span>
                 </a>
 
-                <a href="product.php" class="routine-plan-card featured">
+                <a href="product.php?pack=28" class="routine-plan-card featured">
                     <span class="routine-plan-badge">MOST POPULAR</span>
                     <span class="routine-plan-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -188,7 +188,7 @@ include 'partials/header.php';
                     <span class="routine-plan-arrow">&rarr;</span>
                 </a>
 
-                <a href="product.php" class="routine-plan-card">
+                <a href="product.php?pack=56" class="routine-plan-card">
                     <span class="routine-plan-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -226,18 +226,28 @@ include 'partials/header.php';
 
             <div class="sub-features">
                 <div class="testimonial-slider" data-testimonial-slider>
+                    <h3 class="testimonial-heading">Real people, real results</h3>
                     <div class="testimonial-track">
                         <figure class="testimonial-slide active">
-                            <blockquote>"It lives beside the coffee machine now. I do it before my brain has time to negotiate."</blockquote>
-                            <figcaption>Maya R. <span>28-Day Routine</span></figcaption>
+                            <blockquote>"Finally, a fiber supplement I actually enjoy taking. It's become my non-negotiable morning ritual."</blockquote>
+                            <figcaption>
+                                <span class="testimonial-avatar">S</span>
+                                <span class="testimonial-meta"><strong>Sarah M.</strong><span class="testimonial-role">Busy professional</span></span>
+                            </figcaption>
                         </figure>
                         <figure class="testimonial-slide">
-                            <blockquote>"No blender, no big tub, no cleanup. It finally feels like a wellness thing I can keep."</blockquote>
-                            <figcaption>Jordan M. <span>14-Day Routine</span></figcaption>
+                            <blockquote>"I've tried powders, pills, everything. This is the only thing that's stuck because it's so effortless."</blockquote>
+                            <figcaption>
+                                <span class="testimonial-avatar">J</span>
+                                <span class="testimonial-meta"><strong>James T.</strong><span class="testimonial-role">Fitness enthusiast</span></span>
+                            </figcaption>
                         </figure>
                         <figure class="testimonial-slide">
-                            <blockquote>"Our house stopped running out halfway through the month. The bigger routine just makes sense."</blockquote>
-                            <figcaption>Priya S. <span>56-Day Routine</span></figcaption>
+                            <blockquote>"My gut health has never been better. The convenience factor makes all the difference."</blockquote>
+                            <figcaption>
+                                <span class="testimonial-avatar">E</span>
+                                <span class="testimonial-meta"><strong>Emily R.</strong><span class="testimonial-role">Working mom</span></span>
+                            </figcaption>
                         </figure>
                     </div>
                     <div class="testimonial-controls" aria-label="Testimonials">

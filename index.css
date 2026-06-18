@@ -736,12 +736,28 @@ img {
 .testimonial-slider {
   width: 100%;
   color: #ffffff;
-  min-height: 190px;
+  min-height: 230px;
+}
+
+.testimonial-kicker {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 6px;
+}
+
+.testimonial-heading {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 18px;
 }
 
 .testimonial-track {
   position: relative;
-  min-height: 124px;
+  min-height: 148px;
 }
 
 .testimonial-slide {
@@ -762,12 +778,39 @@ img {
 }
 
 .testimonial-slide figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-body);
   font-weight: 300;
   color: #ffffff;
 }
 
-.testimonial-slide figcaption span {
+.testimonial-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-headline);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.testimonial-meta {
+  display: grid;
+  gap: 1px;
+}
+
+.testimonial-meta strong {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.testimonial-slide figcaption .testimonial-role {
   display: block;
   font-family: var(--font-subheadline);
   font-weight: 300;
@@ -793,6 +836,70 @@ img {
 
 .testimonial-dot.active {
   background: var(--pink);
+}
+
+.product-testimonial-band {
+  padding-top: 30px;
+}
+
+.product-testimonial-panel {
+  background: transparent;
+  color: var(--purple);
+  border-radius: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 0.8fr 1.8fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.product-testimonial-head .badge-tag {
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+
+.product-testimonial-head h2 {
+  color: var(--purple);
+  font-size: 2rem;
+}
+
+.product-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-testimonial {
+  margin: 0;
+  min-width: 0;
+}
+
+.product-testimonial blockquote {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--purple);
+  margin-bottom: 18px;
+}
+
+.product-testimonial figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--purple);
+}
+
+.product-testimonial .testimonial-avatar {
+  background: var(--purple);
+  color: #ffffff;
+}
+
+.product-testimonial .testimonial-role {
+  display: block;
+  font-family: var(--font-subheadline);
+  font-weight: 300;
+  color: rgba(84, 27, 98, 0.65);
+  margin-top: 2px;
 }
 
 /* Health Fits Real Life Section */
@@ -3659,8 +3766,13 @@ textarea.field {
   .benefit-grid,
   .ingredient-grid,
   .post-grid,
-  .bundle-grid {
+  .bundle-grid,
+  .product-testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-testimonial-panel {
+    grid-template-columns: 1fr;
   }
 
   .values-grid {
@@ -3740,8 +3852,13 @@ textarea.field {
   .stats-row,
   .post-grid,
   .bundle-grid,
-  .values-grid {
+  .values-grid,
+  .product-testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .product-testimonial-panel {
+    padding: 0;
   }
 
   .media-split,

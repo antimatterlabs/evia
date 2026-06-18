@@ -83,7 +83,7 @@ include 'partials/header.php';
                 <h3>The First Step</h3>
                 <p class="bundle-desc">14-Day Routine<br>Start simple. See how it fits into your mornings.</p>
                 <div class="bundle-price">$39<small> / one-time</small></div>
-                <a href="product.php" class="btn btn-outline btn-block">Let's get you started</a>
+                <a href="product.php?pack=14" class="btn btn-outline btn-block">Let's get you started</a>
             </div>
 
             <!-- Starter Pack (featured) -->
@@ -95,7 +95,7 @@ include 'partials/header.php';
                 <h3>The Daily Rhythm</h3>
                 <p class="bundle-desc">28-Day Routine<br>A full month of one less thing to think about.</p>
                 <div class="bundle-price">$69<small> / one-time</small></div>
-                <a href="product.php" class="btn btn-purple btn-block">Let's get you started</a>
+                <a href="product.php?pack=28" class="btn btn-purple btn-block">Let's get you started</a>
             </div>
 
             <!-- Subscribe -->
@@ -106,7 +106,7 @@ include 'partials/header.php';
                 <h3>The Household Rhythm</h3>
                 <p class="bundle-desc">56-Day Routine<br>For families building healthier routines together.</p>
                 <div class="bundle-price">$33<small> / month</small></div>
-                <a href="product.php" class="btn btn-yellow btn-block">Let's get you started</a>
+                <a href="product.php?pack=56" class="btn btn-yellow btn-block">Let's get you started</a>
             </div>
         </div>
     </div>
