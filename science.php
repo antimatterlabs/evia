@@ -65,7 +65,7 @@ include 'partials/header.php';
             </div>
         </div>
         <div class="page-hero-right">
-            <img src="assets/images/evia_pour_powder.png" alt="Quality ingredients and science"
+            <img src="assets/images/evia-science.png" alt="Quality ingredients and science"
                 class="page-hero-mobile-img">
         </div>
     </div>
@@ -91,7 +91,7 @@ include 'partials/header.php';
                     </svg>
                 </div>
                 <h4>Evidence-based</h4>
-                <p>Every ingredient is backed by peer-reviewed research. We don't follow trends — we follow the science.
+                <p>Every ingredient is backed by peer-reviewed research. We don't follow trends, we follow the science.
                 </p>
             </div>
             <div class="value-card benefit-card">

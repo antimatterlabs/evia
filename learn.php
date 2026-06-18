@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Learn | Evia Journal';
-$pageDescription = 'Gut-health basics, simple routines, and the science behind feeling good — minus the noise.';
+$pageDescription = 'Gut-health basics, simple routines, and the science behind feeling good, minus the noise.';
 $activeNav = 'learn';
 include 'partials/header.php';
 ?>
@@ -57,7 +57,7 @@ include 'partials/header.php';
                 <h1>The Evia Journal</h1>
                 <img src="assets/images/evia_smiley_face.png" alt="Happy Face" class="page-hero-smiley">
             </div>
-            <p>Gut-health basics, easy routines, and the science behind feeling good — written plainly, minus the noise.
+            <p>Gut-health basics, easy routines, and the science behind feeling good, written plainly, minus the noise.
             </p>
         </div>
         <div class="page-hero-right">
@@ -82,7 +82,7 @@ include 'partials/header.php';
                 <p
                     style="font-family:var(--font-subheadline);font-weight:300;color:rgba(35,31,32,0.8);margin-bottom:18px;line-height:1.6;">
                     Ten seconds for you, before the first email. Why the smallest morning rituals tend to be the ones
-                    that actually stick — and how to build one you'll keep.</p>
+                    that actually stick, and how to build one you'll keep.</p>
                 <div class="post-meta">By the Evia team · 5 min read</div>
                 <span class="post-link">Read the story &rarr;</span>
             </div>
@@ -107,7 +107,7 @@ include 'partials/header.php';
                 <div class="post-body">
                     <span class="post-cat">Recipes</span>
                     <h3>5 easy ways to sneak more fibre into breakfast</h3>
-                    <p>From the obvious to the surprising — small swaps that quietly move the needle on your daily
+                    <p>From the obvious to the surprising, small swaps that quietly move the needle on your daily
                         total.</p>
                     <div class="post-meta">6 min read</div>
                 </div>
@@ -146,10 +146,10 @@ include 'partials/header.php';
             </a>
 
             <a href="article.php" class="post-card" style="color:inherit;">
-                <div class="post-media"><img src="assets/images/evia_pour_powder.png" alt="Pouring Evia powder"></div>
+                <div class="post-media"><img src="assets/images/evia_blog_coffee.png" alt="Pouring Evia powder"></div>
                 <div class="post-body">
                     <span class="post-cat">Gut Health</span>
-                    <h3>Why bloating happens — and what actually helps</h3>
+                    <h3>Why bloating happens, and what actually helps</h3>
                     <p>The common culprits, the myths worth dropping, and the daily habits that tend to settle things.
                     </p>
                     <div class="post-meta">6 min read</div>

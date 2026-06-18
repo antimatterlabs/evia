@@ -518,6 +518,118 @@ img {
   color: var(--blue);
 }
 
+.routine-plan-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 34px;
+  color: var(--black);
+}
+
+.routine-plan-panel .badge-tag {
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+
+.routine-plan-panel h3 {
+  font-size: 1.9rem;
+  color: var(--purple);
+  margin-bottom: 22px;
+}
+
+.routine-plan-list {
+  display: grid;
+  gap: 12px;
+}
+
+.routine-plan-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  min-height: 112px;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1.5px solid rgba(84, 27, 98, 0.12);
+  border-radius: 12px;
+  color: var(--black);
+}
+
+.routine-plan-card.featured {
+  border-color: var(--purple);
+  background: #fffbe6;
+}
+
+.routine-plan-card:hover {
+  border-color: var(--purple);
+}
+
+.routine-plan-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: #f1ecf3;
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.routine-plan-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.routine-plan-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.routine-plan-kicker {
+  font-family: var(--font-alternate);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+.routine-plan-copy strong {
+  font-family: var(--font-headline);
+  font-size: 1.08rem;
+  color: var(--black);
+  line-height: 1.2;
+}
+
+.routine-plan-copy > span:not(.routine-plan-kicker):not(.routine-plan-price) {
+  font-family: var(--font-subheadline);
+  font-weight: 300;
+  color: rgba(35, 31, 32, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.routine-plan-arrow {
+  color: var(--purple);
+  font-family: var(--font-headline);
+  font-size: 1.3rem;
+}
+
+.routine-plan-badge {
+  position: absolute;
+  top: -10px;
+  left: 68px;
+  background: var(--yellow);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-family: var(--font-alternate);
+  font-size: 0.64rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
 /* Subscription Overlay Banner */
 .subscription-banner {
   margin-bottom: 80px;
@@ -529,7 +641,7 @@ img {
   border-radius: 12px;
   padding: 30px 60px;
   display: grid;
-  grid-template-columns: 1.15fr 1.25fr 0.8fr;
+  grid-template-columns: 1.05fr 0.9fr 1.05fr;
   gap: 40px;
   align-items: center;
   position: relative;
@@ -552,12 +664,8 @@ img {
 }
 
 .sub-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  align-items: center;
-  margin-left: -20px;
-  margin-right: 20px;
+  display: block;
+  min-width: 0;
 }
 
 .sub-feature-item {
@@ -592,7 +700,7 @@ img {
 
 .sub-composite {
   position: relative;
-  width: 60%;
+  width: 140px;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -623,6 +731,68 @@ img {
   bottom: -20px;
   left: 10%;
   max-width: 140px;
+}
+
+.testimonial-slider {
+  width: 100%;
+  color: #ffffff;
+  min-height: 190px;
+}
+
+.testimonial-track {
+  position: relative;
+  min-height: 124px;
+}
+
+.testimonial-slide {
+  display: none;
+  margin: 0;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-slide blockquote {
+  font-family: var(--font-body);
+  color: #ffffff;
+  font-size: 1.02rem;
+  line-height: 1.38;
+  margin: 0 0 16px;
+}
+
+.testimonial-slide figcaption {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.testimonial-slide figcaption span {
+  display: block;
+  font-family: var(--font-subheadline);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 2px;
+}
+
+.testimonial-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.testimonial-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.34);
+  cursor: pointer;
+  padding: 0;
+}
+
+.testimonial-dot.active {
+  background: var(--pink);
 }
 
 /* Health Fits Real Life Section */
@@ -2343,6 +2513,63 @@ body.nav-open .nav-toggle span:nth-child(3) {
   line-height: 1.6;
 }
 
+.benefit-proof {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: rgba(84, 27, 98, 0.82);
+  cursor: help;
+}
+
+.benefit-proof::after {
+  content: attr(data-reference-label);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  z-index: 5;
+  width: 280px;
+  max-width: min(280px, calc(100vw - 48px));
+  padding: 14px 20px;
+  border: 1px solid rgba(35, 31, 32, 0.1);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--black);
+  box-shadow: 0 8px 24px rgba(35, 31, 32, 0.12);
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.benefit-proof:hover::after,
+.benefit-proof:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.benefit-proof-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(84, 27, 98, 0.5);
+  flex-shrink: 0;
+}
+
+.benefit-proof sup {
+  margin-left: -2px;
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
 /* ---- Ingredient cards ---- */
 .ingredient-grid {
   display: grid;
@@ -3033,8 +3260,6 @@ textarea.field {
 }
 
 .bundle-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 32px rgba(35, 31, 32, 0.05);
 }
 
 .bundle-card.card-single {
@@ -3112,6 +3337,31 @@ textarea.field {
   font-weight: 300;
   font-size: 0.85rem;
   color: rgba(35, 31, 32, 0.6);
+}
+
+.routine-plan-grid {
+  align-items: stretch;
+}
+
+.routine-plan-shop-card {
+  min-height: 220px;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.routine-plan-shop-card .routine-plan-icon {
+  margin-top: 2px;
+}
+
+.routine-plan-shop-card .routine-plan-copy strong {
+  font-size: 1.3rem;
+}
+
+.routine-plan-price {
+  font-family: var(--font-headline) !important;
+  font-size: 1.45rem !important;
+  color: var(--purple) !important;
+  margin-top: 12px;
 }
 
 /* ---- Product detail ---- */
@@ -3264,6 +3514,7 @@ textarea.field {
 }
 
 .opt-text .opt-title {
+  display: inline-block;
   font-weight: 700;
 }
 
@@ -3282,6 +3533,25 @@ textarea.field {
   padding: 4px 9px;
   border-radius: 4px;
   white-space: nowrap;
+}
+
+.routine-purchase-option {
+  align-items: center;
+}
+
+.routine-purchase-option .routine-plan-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.routine-purchase-option .opt-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.routine-purchase-option .routine-plan-kicker {
+  display: block;
+  margin-bottom: 2px;
 }
 
 .qty-row {

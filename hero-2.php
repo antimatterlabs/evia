@@ -43,7 +43,7 @@
             <div class="badge-tag">HACK YOUR HEALTH</div>
             <img src="assets/images/evia_smiley_face.png" alt="Happy Face" class="smiley-badge-hero">
             <h1>Less Bloating<br>More Movement</h1>
-            <p>At Evia, we make daily nutrition simple, approachable, and modern—so you can feel better, every day.</p>
+            <p>At Evia, we make daily nutrition simple, approachable, and modern, so you can feel better, every day.</p>
 
             <div class="hero-actions">
                 <a href="#" class="btn btn-purple">Our story <span style="margin-left: 8px;">&rarr;</span></a>

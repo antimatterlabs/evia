@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Benefits & Ingredients | Evia';
-$pageDescription = 'What 10g of daily fibre actually does — and the three carefully selected sources behind every serving.';
+$pageDescription = 'What 10g of daily fibre actually does, and the three carefully selected sources behind every serving.';
 $activeNav = 'benefits';
 include 'partials/header.php';
 ?>
@@ -57,7 +57,7 @@ include 'partials/header.php';
                 <h1>Less bloating. More movement.</h1>
                 <img src="assets/images/evia_smiley_face.png" alt="Happy Face" class="page-hero-smiley">
             </div>
-            <p>Most of us get about half the fibre we need. Evia closes the gap in ten seconds — and your gut notices.
+            <p>Most of us get about half the fibre we need. Evia closes the gap in ten seconds, and your gut notices.
             </p>
             <div class="page-hero-actions">
                 <a href="#ingredients" class="btn btn-purple">Meet the ingredients <span
@@ -76,7 +76,7 @@ include 'partials/header.php';
     <div class="container">
         <div class="section-head">
             <h2>What daily fibre gives back</h2>
-            <p>Small routine, real returns. Here's what people feel when fibre becomes a daily thing.</p>
+            <p>From gut health to blood sugar balance, fiber impacts nearly every aspect of your wellbeing.</p>
         </div>
 
         <div class="benefit-grid flat-benefits">
@@ -89,9 +89,12 @@ include 'partials/header.php';
                         </path>
                     </svg>
                 </div>
-                <h3>Less bloating</h3>
-                <p>A balanced mix of soluble and fermentable fibre helps things settle, so you feel lighter through the
-                    day.</p>
+                <h3>Gut Health</h3>
+                <p>Fiber feeds beneficial gut bacteria, supporting a healthy microbiome essential for digestion,
+                    immunity, and overall wellness.</p>
+                <span class="benefit-proof" data-reference-label="Prebiotic fibers nourish beneficial gut bacteria">
+                    <span class="benefit-proof-dot"></span>Research-backed<sup>[1,4,5]</sup>
+                </span>
             </div>
 
             <div class="benefit-card">
@@ -102,8 +105,12 @@ include 'partials/header.php';
                         <polyline points="17 6 23 6 23 12"></polyline>
                     </svg>
                 </div>
-                <h3>More regularity</h3>
-                <p>Fibre is the quiet engine of digestion. Daily intake keeps things moving like they should.</p>
+                <h3>Blood Sugar Balance</h3>
+                <p>Soluble fiber slows glucose absorption, helping maintain steady energy levels and supporting healthy
+                    HbA1c levels.</p>
+                <span class="benefit-proof" data-reference-label="Clinical trials demonstrate improved glycemic response">
+                    <span class="benefit-proof-dot"></span>Research-backed<sup>[2,6]</sup>
+                </span>
             </div>
 
             <div class="benefit-card">
@@ -113,8 +120,12 @@ include 'partials/header.php';
                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                     </svg>
                 </div>
-                <h3>Steadier energy</h3>
-                <p>Soluble fibre slows sugar absorption, smoothing out the spikes and the mid-morning dip.</p>
+                <h3>Reduced Disease Risk</h3>
+                <p>Regular fiber intake is linked to lower risk of heart disease, type 2 diabetes, and certain cancers
+                    including colon cancer.</p>
+                <span class="benefit-proof" data-reference-label="Higher fiber intake is linked to lower chronic disease risk">
+                    <span class="benefit-proof-dot"></span>Research-backed<sup>[3]</sup>
+                </span>
             </div>
 
             <div class="benefit-card">
@@ -126,9 +137,12 @@ include 'partials/header.php';
                         <path d="M19 2c-2.26 9.56-8.5 14-8.5 14"></path>
                     </svg>
                 </div>
-                <h3>A happier gut</h3>
-                <p>Fermentable fibres feed the good bacteria in your gut microbiome — the foundation of feeling well.
-                </p>
+                <h3>Mental Clarity</h3>
+                <p>The gut-brain axis means a healthy gut supports cognitive function, mood regulation, and mental
+                    wellbeing.</p>
+                <span class="benefit-proof" data-reference-label="Gut microbiome health supports mood and cognitive function">
+                    <span class="benefit-proof-dot"></span>Research-backed<sup>[1,4,5]</sup>
+                </span>
             </div>
 
             <div class="benefit-card">
@@ -139,8 +153,11 @@ include 'partials/header.php';
                         <polyline points="12 6 12 12 16 14"></polyline>
                     </svg>
                 </div>
-                <h3>Ten-second routine</h3>
-                <p>Tear, drink, done. No blender, no chalky shake, no reason to skip it tomorrow.</p>
+                <h3>Sustained Energy</h3>
+                <p>Unlike sugar spikes, fiber provides steady, lasting energy throughout the day without crashes.</p>
+                <span class="benefit-proof" data-reference-label="Fiber supports steadier energy without sharp sugar crashes">
+                    <span class="benefit-proof-dot"></span>Research-backed<sup>[10,11]</sup>
+                </span>
             </div>
 
             <div class="benefit-card">
@@ -156,8 +173,11 @@ include 'partials/header.php';
                         <line x1="21" y1="12" x2="23" y2="12"></line>
                     </svg>
                 </div>
-                <h3>Better mornings</h3>
-                <p>One small thing for you, before the world catches up. A calmer kind of busy.</p>
+                <h3>Reduced Inflammation</h3>
+                <p>Fiber-fed gut bacteria produce anti-inflammatory compounds that benefit your entire body.</p>
+                <span class="benefit-proof" data-reference-label="Fiber fermentation produces compounds that support healthy inflammation response">
+                    <span class="benefit-proof-dot"></span>Research-backed<sup>[8,12]</sup>
+                </span>
             </div>
         </div>
     </div>
@@ -172,7 +192,7 @@ include 'partials/header.php';
                 <h2>Most of us are running on half the fibre we need</h2>
                 <p>The recommendation is 25–38g a day. The average adult gets around 15. That gap shows up as sluggish
                     digestion, energy dips, and a gut that never quite settles.</p>
-                <p>Evia is built to close it without another thing to overthink — ten grams from three sources, in a
+                <p>Evia is built to close it without another thing to overthink, ten grams from three sources, in a
                     shot you'll actually look forward to.</p>
                 <a href="product.php" class="btn btn-purple">Shop Daily Fibre</a>
             </div>
@@ -189,7 +209,7 @@ include 'partials/header.php';
         <div class="section-head">
             <div class="badge-tag">THREE SOURCES, ONE SHOT</div>
             <h2>What's actually inside</h2>
-            <p>Not just one fibre on a label — three, chosen for different roles in how they ferment, how they feel, and
+            <p>Not just one fibre on a label, three, chosen for different roles in how they ferment, how they feel, and
                 how easy they are to take every day.</p>
         </div>
 

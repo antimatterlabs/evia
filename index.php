@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Evia | A 10-second fibre routine for mornings that already ask a lot';
-$pageDescription = 'One ounce. Ten grams of fibre from three carefully selected sources. Tear, drink, done — then get on with your day.';
+$pageDescription = 'One ounce. Ten grams of fibre from three carefully selected sources. Tear, drink, done, then get on with your day.';
 $activeNav = '';
 include 'partials/header.php';
 ?>
@@ -16,12 +16,12 @@ include 'partials/header.php';
             <div class="badge-tag">DAILY FIBRE, MADE SIMPLE</div>
             <img src="assets/images/evia_smiley_face.png" alt="Happy Face" class="smiley-badge-hero">
             <h1>A 10-second fibre routine for mornings that already ask a lot</h1>
-            <p>One ounce. Ten grams of fibre from three carefully selected sources. Tear, drink, done — then get on
+            <p>One ounce. Ten grams of fibre from three carefully selected sources. Tear, drink, done, then get on
                 with your day.</p>
 
             <div class="hero-actions">
-                <a href="#" class="btn btn-purple">Let's get you started</a>
-                <a href="#" class="link-underline">See how it works</a>
+                <a href="shop.php#subscribe" class="btn btn-purple">Let's get you started</a>
+                <a href="benefits.php" class="link-underline">See the benefits</a>
             </div>
 
             <img src="assets/images/plus-pattern.svg" alt="Pattern Decor" class="decor-pattern">
@@ -77,11 +77,11 @@ include 'partials/header.php';
             <div class="badge-tag">HACK YOUR HEALTH</div>
             <img src="assets/images/evia_smiley_face.png" alt="Happy Face" class="smiley-badge-hero">
             <h1>Less Bloating<br>More Movement</h1>
-            <p>At Evia, we make daily nutrition simple, approachable, and modern—so you can feel better, every day.</p>
+            <p>At Evia, we make daily nutrition simple, approachable, and modern, so you can feel better, every day.</p>
 
             <div class="hero-actions">
-                <a href="#" class="btn btn-purple">Our story <span style="margin-left: 8px;">&rarr;</span></a>
-                <a href="#" class="link-underline">Learn more</a>
+                <a href="about.php#story" class="btn btn-purple">Our story <span style="margin-left: 8px;">&rarr;</span></a>
+                <a href="benefits.php" class="link-underline">Learn more</a>
             </div>
 
             <!-- SVG Plus Pattern Decor -->
@@ -139,38 +139,76 @@ include 'partials/header.php';
                     </li>
                 </ul>
                 <div>
-                    <a href="#" class="btn btn-purple">Start with Daily Fibre</a>
+                    <a href="product.php" class="btn btn-purple">Start with Daily Fibre</a>
                 </div>
             </div>
         </div>
 
-        <!-- Card 2: Daily Protein -->
-        <div class="product-card card-protein">
-            <div class="card-image-wrapper">
-                <img src="assets/images/evia_protein_box.png" alt="Daily Protein Packaging" class="product-img">
-            </div>
-            <div class="card-content">
-                <div class="badge-tag">COMING SOON</div>
-                <h3>Daily Protein</h3>
-                <p class="card-subtitle">A smooth boost for recovery and energy.</p>
-                <ul class="card-features">
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
+        <!-- Subscription plans -->
+        <div class="routine-plan-panel">
+            <div class="badge-tag">PICK YOUR PACE</div>
+            <h3>Choose your rhythm</h3>
+            <div class="routine-plan-list">
+                <a href="product.php" class="routine-plan-card">
+                    <span class="routine-plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M9 15h6"></path>
                         </svg>
-                        12g protein
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
+                    </span>
+                    <span class="routine-plan-copy">
+                        <span class="routine-plan-kicker">The First Step</span>
+                        <strong>14-Day Routine</strong>
+                        <span>Start simple. See how it fits into your mornings.</span>
+                    </span>
+                    <span class="routine-plan-arrow">&rarr;</span>
+                </a>
+
+                <a href="product.php" class="routine-plan-card featured">
+                    <span class="routine-plan-badge">MOST POPULAR</span>
+                    <span class="routine-plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M8 15h8"></path>
                         </svg>
-                        Probiotics
-                    </li>
-                </ul>
+                    </span>
+                    <span class="routine-plan-copy">
+                        <span class="routine-plan-kicker">The Daily Rhythm</span>
+                        <strong>28-Day Routine</strong>
+                        <span>A full month of one less thing to think about.</span>
+                    </span>
+                    <span class="routine-plan-arrow">&rarr;</span>
+                </a>
+
+                <a href="product.php" class="routine-plan-card">
+                    <span class="routine-plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M8 14h3"></path>
+                            <path d="M13 14h3"></path>
+                            <path d="M8 17h3"></path>
+                            <path d="M13 17h3"></path>
+                        </svg>
+                    </span>
+                    <span class="routine-plan-copy">
+                        <span class="routine-plan-kicker">The Household Rhythm</span>
+                        <strong>56-Day Routine</strong>
+                        <span>For families building healthier routines together.</span>
+                    </span>
+                    <span class="routine-plan-arrow">&rarr;</span>
+                </a>
             </div>
         </div>
 
@@ -183,40 +221,30 @@ include 'partials/header.php';
             <div class="sub-left">
                 <h2>Never Run Out<br>of What Feels Good</h2>
                 <p class="sub-desc">Subscribe & save 15% on every order. Free shipping, pause or cancel anytime.</p>
-                <a href="#" class="btn btn-yellow">Subscribe & save 15%</a>
+                <a href="shop.php" class="btn btn-yellow">Subscribe & save 15%</a>
             </div>
 
             <div class="sub-features">
-                <div class="sub-feature-item">
-                    <!-- Tag Icon -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                        </path>
-                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                    </svg>
-                    <div class="sub-feature-label">Save 15%</div>
-                </div>
-                <div class="sub-feature-item">
-                    <!-- Truck Icon -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="1" y="3" width="15" height="13"></rect>
-                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                    </svg>
-                    <div class="sub-feature-label">Free shipping</div>
-                </div>
-                <div class="sub-feature-item">
-                    <!-- Pause Icon -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="10" y1="15" x2="10" y2="9"></line>
-                        <line x1="14" y1="15" x2="14" y2="9"></line>
-                    </svg>
-                    <div class="sub-feature-label">Pause anytime</div>
+                <div class="testimonial-slider" data-testimonial-slider>
+                    <div class="testimonial-track">
+                        <figure class="testimonial-slide active">
+                            <blockquote>"It lives beside the coffee machine now. I do it before my brain has time to negotiate."</blockquote>
+                            <figcaption>Maya R. <span>28-Day Routine</span></figcaption>
+                        </figure>
+                        <figure class="testimonial-slide">
+                            <blockquote>"No blender, no big tub, no cleanup. It finally feels like a wellness thing I can keep."</blockquote>
+                            <figcaption>Jordan M. <span>14-Day Routine</span></figcaption>
+                        </figure>
+                        <figure class="testimonial-slide">
+                            <blockquote>"Our house stopped running out halfway through the month. The bigger routine just makes sense."</blockquote>
+                            <figcaption>Priya S. <span>56-Day Routine</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="testimonial-controls" aria-label="Testimonials">
+                        <button class="testimonial-dot active" type="button" aria-label="Show testimonial 1"></button>
+                        <button class="testimonial-dot" type="button" aria-label="Show testimonial 2"></button>
+                        <button class="testimonial-dot" type="button" aria-label="Show testimonial 3"></button>
+                    </div>
                 </div>
             </div>
 
@@ -401,7 +429,7 @@ include 'partials/header.php';
                         d="M403.43,37.34c-.36,1.4-4.81,1.04-6.1,1-1.54-.05-3.61-.57-5.12-.69-1.23-.1-2.51,1.28-3.48.34l14.7-15.26v14.61Z" />
                 </g>
             </svg>
-            <img src="assets/images/handheld-evia-2.png" class="why-right-img" alt="Hand holding Evia pouch">
+            <img src="assets/images/evia-hand-alt.png" class="why-right-img" alt="Hand holding Evia pouch">
         </div>
     </div>
 
@@ -427,7 +455,7 @@ include 'partials/header.php';
                 <div class="blog-card-body">
                     <h4>Start small</h4>
                     <p>Ten grams of fibre in one ounce. Easy to try. Easy to keep.</p>
-                    <a href="#" class="blog-card-link">Learn more &rarr;</a>
+                    <a href="article.php" class="blog-card-link">Learn more &rarr;</a>
                 </div>
             </div>
 
@@ -439,7 +467,7 @@ include 'partials/header.php';
                 <div class="blog-card-body">
                     <h4>Make space for the morning</h4>
                     <p>Ten seconds for you before the world catches up.</p>
-                    <a href="#" class="blog-card-link">Read more &rarr;</a>
+                    <a href="article.php" class="blog-card-link">Read more &rarr;</a>
                 </div>
             </div>
 
@@ -451,7 +479,7 @@ include 'partials/header.php';
                 <div class="blog-card-body">
                     <h4>A routine you can return to</h4>
                     <p>Not about more. About what actually helps.</p>
-                    <a href="#" class="blog-card-link">Explore ingredients &rarr;</a>
+                    <a href="benefits.php#ingredients" class="blog-card-link">Explore ingredients &rarr;</a>
                 </div>
             </div>
         </div>
@@ -498,6 +526,33 @@ include 'partials/header.php';
                 localStorage.setItem('preferred-hero', '1');
             }
         });
+
+        const testimonialSlider = document.querySelector('[data-testimonial-slider]');
+        if (testimonialSlider) {
+            const slides = testimonialSlider.querySelectorAll('.testimonial-slide');
+            const dots = testimonialSlider.querySelectorAll('.testimonial-dot');
+            let activeTestimonial = 0;
+
+            const showTestimonial = function (index) {
+                activeTestimonial = index;
+                slides.forEach(function (slide, slideIndex) {
+                    slide.classList.toggle('active', slideIndex === activeTestimonial);
+                });
+                dots.forEach(function (dot, dotIndex) {
+                    dot.classList.toggle('active', dotIndex === activeTestimonial);
+                });
+            };
+
+            dots.forEach(function (dot, index) {
+                dot.addEventListener('click', function () {
+                    showTestimonial(index);
+                });
+            });
+
+            setInterval(function () {
+                showTestimonial((activeTestimonial + 1) % slides.length);
+            }, 6000);
+        }
     });
 </script>
 

@@ -65,89 +65,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Product Showcase -->
-<section class="product-showcase">
-    <div class="container showcase-grid">
-
-        <!-- Daily Fibre -->
-        <div class="product-card card-fibre">
-            <div class="card-image-wrapper">
-                <img src="assets/images/evia_fiber_pouch.png" alt="Daily Fibre Drinkable Sachet" class="product-img">
-            </div>
-            <div class="card-content">
-                <h3>Daily Fibre</h3>
-                <p class="card-subtitle">For the morning routine you can actually keep.</p>
-                <ul class="card-features">
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
-                        </svg>
-                        10g fibre, 3 sources
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
-                        </svg>
-                        One-ounce daily shot
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
-                        </svg>
-                        No grit, no fuss
-                    </li>
-                </ul>
-                <div class="product-price" style="margin:0 0 18px;">$39<span
-                        style="font-size:0.95rem;font-family:var(--font-subheadline);font-weight:300;color:rgba(35,31,32,0.6);">
-                        / 30 servings</span></div>
-                <div>
-                    <a href="product.php" class="btn btn-purple">Shop Daily Fibre</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Daily Protein -->
-        <div class="product-card card-protein" id="protein">
-            <div class="card-image-wrapper">
-                <img src="assets/images/evia_protein_box.png" alt="Daily Protein Packaging" class="product-img">
-            </div>
-            <div class="card-content">
-                <div class="badge-tag">COMING SOON</div>
-                <h3>Daily Protein</h3>
-                <p class="card-subtitle">A smooth boost for recovery and energy.</p>
-                <ul class="card-features">
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
-                        </svg>
-                        12g protein
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="9 11 12 14 16 9"></polyline>
-                        </svg>
-                        Probiotics
-                    </li>
-                </ul>
-                <div>
-                    <a href="#" class="btn btn-disabled">Notify me</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
 <!-- Bundles -->
 <section class="section" id="subscribe">
     <div class="container">
@@ -161,35 +78,35 @@ include 'partials/header.php';
             <!-- Single -->
             <div class="bundle-card card-single">
                 <div class="bundle-media">
-                    <img src="assets/images/evia_fiber_box.png" alt="Daily Fibre single box">
+                    <img src="assets/images/evia_fiber_pouch.png" alt="Daily Fibre single box">
                 </div>
-                <h3>Single Box</h3>
-                <p class="bundle-desc">30 servings. A no-commitment way to start the routine.</p>
+                <h3>The First Step</h3>
+                <p class="bundle-desc">14-Day Routine<br>Start simple. See how it fits into your mornings.</p>
                 <div class="bundle-price">$39<small> / one-time</small></div>
-                <a href="product.php" class="btn btn-outline btn-block">Add to cart</a>
+                <a href="product.php" class="btn btn-outline btn-block">Let's get you started</a>
             </div>
 
             <!-- Starter Pack (featured) -->
             <div class="bundle-card card-starter featured">
                 <span class="bundle-flag">MOST POPULAR</span>
                 <div class="bundle-media">
-                    <img src="assets/images/evia_fiber_pouch.png" alt="Daily Fibre starter pack">
+                    <img src="assets/images/pouch-box.png" alt="Daily Fibre starter pack">
                 </div>
-                <h3>Starter Pack</h3>
-                <p class="bundle-desc">Two boxes plus a travel tin, so the routine follows you anywhere.</p>
+                <h3>The Daily Rhythm</h3>
+                <p class="bundle-desc">28-Day Routine<br>A full month of one less thing to think about.</p>
                 <div class="bundle-price">$69<small> / one-time</small></div>
-                <a href="product.php" class="btn btn-purple btn-block">Add to cart</a>
+                <a href="product.php" class="btn btn-purple btn-block">Let's get you started</a>
             </div>
 
             <!-- Subscribe -->
             <div class="bundle-card card-subscribe">
                 <div class="bundle-media">
-                    <img src="assets/images/evia_fiber_box.png" alt="Daily Fibre subscription">
+                    <img src="assets/images/evia-multibox.png" alt="Daily Fibre subscription">
                 </div>
-                <h3>Subscribe &amp; Save</h3>
-                <p class="bundle-desc">Save 15%, ship free, pause or cancel anytime. The easy choice.</p>
+                <h3>The Household Rhythm</h3>
+                <p class="bundle-desc">56-Day Routine<br>For families building healthier routines together.</p>
                 <div class="bundle-price">$33<small> / month</small></div>
-                <a href="product.php" class="btn btn-yellow btn-block">Subscribe</a>
+                <a href="product.php" class="btn btn-yellow btn-block">Let's get you started</a>
             </div>
         </div>
     </div>

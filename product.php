@@ -22,9 +22,7 @@ include 'partials/header.php';
             <div class="product-thumbs">
                 <div class="product-thumb active" data-img="assets/images/evia_fiber_box.png"><img src="assets/images/evia_fiber_box.png" alt="Daily Fibre box"></div>
                 <div class="product-thumb" data-img="assets/images/evia_fiber_pouch.png"><img src="assets/images/evia_fiber_pouch.png" alt="Daily Fibre sachet"></div>
-                <div class="product-thumb" data-img="assets/images/evia_pour_powder.png"><img src="assets/images/evia_pour_powder.png" alt="Pouring Evia"></div>
-                <div class="product-thumb" data-img="assets/images/handheld-evia.png"><img src="assets/images/handheld-evia.png" alt="Holding Evia"></div>
-                <div class="product-thumb" data-img="assets/images/handheld-evia-2.png"><img src="assets/images/handheld-evia-2.png" alt="Evia pouch in hand"></div>
+                <div class="product-thumb" data-img="assets/images/evia-hand-alt.png"><img src="assets/images/evia-hand-alt.png" alt="Evia pouch in hand"></div>
                 <div class="product-thumb" data-img="assets/images/bedside.png"><img src="assets/images/bedside.png" alt="Evia on a bedside table"></div>
                 <div class="product-thumb" data-img="assets/images/evia-lemon-kitchen.png"><img src="assets/images/evia-lemon-kitchen.png" alt="Evia in a kitchen with lemons"></div>
                 <div class="product-thumb" data-img="assets/images/evia-morning.png"><img src="assets/images/evia-morning.png" alt="Evia in a morning routine"></div>
@@ -39,26 +37,72 @@ include 'partials/header.php';
                 <span>4.9 · 1,200+ reviews</span>
             </div>
 
-            <p class="product-desc">For the morning routine you can actually keep. One ounce, ten grams of fibre from three carefully selected sources. Tear, drink, done — then get on with your day.</p>
+            <p class="product-desc">For the morning routine you can actually keep. One ounce, ten grams of fibre from three carefully selected sources. Tear, drink, done, then get on with your day.</p>
 
             <div class="product-price" id="priceDisplay">$33<span class="old">$39</span></div>
 
             <!-- Purchase options -->
-            <div class="purchase-options">
-                <div class="purchase-option selected" data-price="$33" data-old="$39">
+            <div class="purchase-options routine-purchase-options">
+                <div class="purchase-option routine-purchase-option" data-price="$19" data-old="">
                     <span class="opt-radio"></span>
+                    <span class="routine-plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M9 15h6"></path>
+                        </svg>
+                    </span>
                     <span class="opt-text">
-                        <span class="opt-title">Subscribe &amp; Save</span><br>
-                        <span class="opt-sub">Ships monthly · free shipping · cancel anytime</span>
+                        <span class="routine-plan-kicker">The First Step</span>
+                        <span class="opt-title">14-Day Routine</span><br>
+                        <span class="opt-sub">Start simple. See how it fits into your mornings.</span>
+                    </span>
+                </div>
+
+                <div class="purchase-option routine-purchase-option selected" data-price="$33" data-old="$39">
+                    <span class="opt-radio"></span>
+                    <span class="routine-plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M8 15h8"></path>
+                        </svg>
+                    </span>
+                    <span class="opt-text">
+                        <span class="routine-plan-kicker">The Daily Rhythm</span>
+                        <span class="opt-title">28-Day Routine</span><br>
+                        <span class="opt-sub">A full month of one less thing to think about.</span>
                     </span>
                     <span class="opt-save">SAVE 15%</span>
                 </div>
-                <div class="purchase-option" data-price="$39" data-old="">
+
+                <div class="purchase-option routine-purchase-option" data-price="$62" data-old="$78">
                     <span class="opt-radio"></span>
-                    <span class="opt-text">
-                        <span class="opt-title">One-time purchase</span><br>
-                        <span class="opt-sub">14 servings · no commitment</span>
+                    <span class="routine-plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M8 14h3"></path>
+                            <path d="M13 14h3"></path>
+                            <path d="M8 17h3"></path>
+                            <path d="M13 17h3"></path>
+                        </svg>
                     </span>
+                    <span class="opt-text">
+                        <span class="routine-plan-kicker">The Household Rhythm</span>
+                        <span class="opt-title">56-Day Routine</span><br>
+                        <span class="opt-sub">For families building healthier routines together.</span>
+                    </span>
+                    <span class="opt-save">BEST VALUE</span>
                 </div>
             </div>
 
@@ -84,7 +128,7 @@ include 'partials/header.php';
             <div class="product-specs">
                 <div class="faq-item open">
                     <button class="faq-q" aria-expanded="true">Details<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>30 single-serve, one-ounce daily shots per box. 10g of fibre each, from three sources chosen for fermentability, tolerance, and easy daily use. No artificial sweeteners or colours.</p></div>
+                    <div class="faq-a"><p>Single-serve, one-ounce daily shots. 10g of fibre each, from three sources chosen for fermentability, tolerance, and easy daily use. No artificial sweeteners or colours.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-q" aria-expanded="false">How to use<span class="faq-icon"></span></button>
@@ -105,7 +149,7 @@ include 'partials/header.php';
         <div class="section-head">
             <div class="badge-tag">THREE SOURCES, ONE SHOT</div>
             <h2>What's actually inside</h2>
-            <p>Not just one fibre on a label — three, chosen for different roles in how they ferment, how they feel, and
+            <p>Not just one fibre on a label, three, chosen for different roles in how they ferment, how they feel, and
                 how easy they are to take every day.</p>
         </div>
 
@@ -211,7 +255,7 @@ include 'partials/header.php';
                     <path d="M403.43,37.34c-.36,1.4-4.81,1.04-6.1,1-1.54-.05-3.61-.57-5.12-.69-1.23-.1-2.51,1.28-3.48.34l14.7-15.26v14.61Z" />
                 </g>
             </svg>
-            <img src="assets/images/handheld-evia-2.png" class="why-right-img" alt="Hand holding Evia pouch">
+            <img src="assets/images/evia-hand-alt.png" class="why-right-img" alt="Hand holding Evia pouch">
         </div>
     </div>
 

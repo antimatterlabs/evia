@@ -62,7 +62,7 @@ include 'partials/header.php';
                 <h2>Send us a note</h2>
                 <p class="lead">Fill this out and we'll get back to you, usually within one business day.</p>
 
-                <!-- Static form (front-end only — wire up a handler when ready) -->
+                <!-- Static form (front-end only, wire up a handler when ready) -->
                 <form action="#" method="post" novalidate>
                     <div class="form-row">
                         <div class="form-group">

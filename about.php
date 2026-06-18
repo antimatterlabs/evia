@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'About Evia | Our Story';
-$pageDescription = 'We make daily nutrition simple, approachable, and modern — so you can feel better, every day.';
+$pageDescription = 'We make daily nutrition simple, approachable, and modern, so you can feel better, every day.';
 $activeNav = 'about';
 include 'partials/header.php';
 ?>
@@ -57,7 +57,7 @@ include 'partials/header.php';
                 <h1>Here for the mornings that already ask a lot</h1>
                 <img src="assets/images/evia_smiley_face.png" alt="Happy Face" class="page-hero-smiley">
             </div>
-            <p>We make daily nutrition simple, approachable, and modern — so feeling better doesn't become one more
+            <p>We make daily nutrition simple, approachable, and modern so feeling better doesn't become one more
                 thing to manage.</p>
             <div class="page-hero-actions">
                 <a href="#story" class="btn btn-yellow">Read our story <span style="margin-left: 8px;">&rarr;</span></a>
@@ -165,7 +165,7 @@ include 'partials/header.php';
                     </svg>
                 </div>
                 <h4>Better, every day</h4>
-                <p>Small routines compound. We're here for the long, quiet progress — not the quick fix.</p>
+                <p>Small routines compound. We're here for the long, quiet progress, not the quick fix.</p>
             </div>
         </div>
     </div>
@@ -178,7 +178,7 @@ include 'partials/header.php';
             <div class="media-split-text">
                 <div class="badge-tag">HOW WE MAKE IT</div>
                 <h2>Carefully sourced, gently made</h2>
-                <p>Every batch starts with three fibre sources picked for fermentability, tolerance, and daily use —
+                <p>Every batch starts with three fibre sources picked for fermentability, tolerance, and daily use, 
                     then it's tested so what's on the box is what's in the box.</p>
                 <p>We'd rather move slowly and get it right than rush something you have to second-guess. That's the
                     standard for everything we put our name on.</p>

@@ -20,7 +20,7 @@ SVG;
                     <h3>The morning routine, delivered.</h3>
                     <p>Get 10% off your first order, plus gut-health tips and first access to new releases.</p>
                 </div>
-                <form class="newsletter-form" action="#" method="post">
+                <form class="newsletter-form" action="shop.php#subscribe" method="get">
                     <input type="email" name="email" placeholder="Your email address" required class="newsletter-input">
                     <button type="submit" class="btn btn-yellow">Join the routine</button>
                 </form>
@@ -50,7 +50,7 @@ SVG;
                 <?= $footerUnderline ?>
                 <ul>
                     <li><a href="product.php">Daily Fibre</a></li>
-                    <li><a href="shop.php#protein">Daily Protein</a></li>
+                    <li><a href="shop.php">Daily Protein</a></li>
                     <li><a href="shop.php">Starter Packs</a></li>
                     <li><a href="shop.php#subscribe">Subscriptions</a></li>
                 </ul>
@@ -74,7 +74,7 @@ SVG;
                     <li><a href="faq.php">FAQs</a></li>
                     <li><a href="faq.php#shipping">Shipping &amp; Returns</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="#">Account</a></li>
+                    <li><a href="faq.php#account">Account</a></li>
                 </ul>
             </div>
         </div>

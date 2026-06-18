@@ -63,12 +63,12 @@ include 'partials/header.php';
 
                 <div class="faq-item open">
                     <button class="faq-q" aria-expanded="true">How much fibre is in one serving?<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>Each one-ounce serving delivers 10g of fibre from three carefully selected sources — organic acacia fibre, inulin from chicory root, and green kiwi. That's a meaningful step toward the 25–38g most adults need each day.</p></div>
+                    <div class="faq-a"><p>Each one-ounce serving delivers 10g of fibre from three carefully selected sources, organic acacia fibre, inulin from chicory root, and green kiwi. That's a meaningful step toward the 25–38g most adults need each day.</p></div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-q" aria-expanded="false">What does it taste like?<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>Light and smooth, with a hint of natural sweetness from the chicory root — no chalk, no grit. You can take it straight or stir it into water.</p></div>
+                    <div class="faq-a"><p>Light and smooth, with a hint of natural sweetness from the chicory root, no chalk, no grit. You can take it straight or stir it into water.</p></div>
                 </div>
 
                 <div class="faq-item">
@@ -83,7 +83,7 @@ include 'partials/header.php';
 
                 <div class="faq-item">
                     <button class="faq-q" aria-expanded="false">When's the best time to take it?<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>Whenever you'll remember it — most people make it a morning ritual before the first email. Consistency matters far more than timing.</p></div>
+                    <div class="faq-a"><p>Whenever you'll remember it, most people make it a morning ritual before the first email. Consistency matters far more than timing.</p></div>
                 </div>
             </div>
 
@@ -103,7 +103,7 @@ include 'partials/header.php';
 
                 <div class="faq-item">
                     <button class="faq-q" aria-expanded="false">What's your return policy?<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>If you're not feeling the difference, reach out within 30 days for a full refund — even on opened boxes. We'd rather make it right than keep your money.</p></div>
+                    <div class="faq-a"><p>If you're not feeling the difference, reach out within 30 days for a full refund, even on opened boxes. We'd rather make it right than keep your money.</p></div>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@ include 'partials/header.php';
 
                 <div class="faq-item">
                     <button class="faq-q" aria-expanded="false">How does Subscribe &amp; Save work?<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>Pick a delivery cadence and we'll ship automatically, with 15% off every order and free shipping. You're in control — adjust, pause, or cancel anytime from your account.</p></div>
+                    <div class="faq-a"><p>Pick a delivery cadence and we'll ship automatically, with 15% off every order and free shipping. You're in control, adjust, pause, or cancel anytime from your account.</p></div>
                 </div>
 
                 <div class="faq-item">
@@ -128,7 +128,7 @@ include 'partials/header.php';
             </div>
 
             <!-- Account & Orders -->
-            <div class="faq-group">
+            <div class="faq-group" id="account">
                 <h2>Account &amp; Orders</h2>
 
                 <div class="faq-item">
@@ -138,7 +138,7 @@ include 'partials/header.php';
 
                 <div class="faq-item">
                     <button class="faq-q" aria-expanded="false">Can I change my address or order?<span class="faq-icon"></span></button>
-                    <div class="faq-a"><p>Yes — as long as it hasn't shipped yet. Update details in your account, or message us and we'll sort it out quickly.</p></div>
+                    <div class="faq-a"><p>Yes, as long as it hasn't shipped yet. Update details in your account, or message us and we'll sort it out quickly.</p></div>
                 </div>
             </div>
 
@@ -148,7 +148,7 @@ include 'partials/header.php';
         <div style="max-width:820px;margin:10px auto 0;">
             <div class="cta-band">
                 <h2>Still have a question?</h2>
-                <p>Can't find what you're looking for? Our team is happy to help — usually within one business day.</p>
+                <p>Can't find what you're looking for? Our team is happy to help, usually within one business day.</p>
                 <a href="contact.php" class="btn btn-yellow btn-lg">Contact us</a>
             </div>
         </div>
