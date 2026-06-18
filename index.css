@@ -739,18 +739,8 @@ img {
   min-height: 230px;
 }
 
-.testimonial-kicker {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--yellow);
-  margin-bottom: 6px;
-}
-
 .testimonial-heading {
-  color: #ffffff;
+  color: var(--yellow);
   font-size: 1.35rem;
   margin-bottom: 18px;
 }
